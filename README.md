@@ -1,14 +1,32 @@
-# 微缩工坊
+# 3D 造物台 · 3D Maker Studio
+
+**简体中文** · [English](README.en.md)
 
 在 DeepSeek Harness 里把创意做成可旋转、可交互的 3D HTML 作品。写一句话或上传参考图，检查和调整设计，再交给 DSH 会话制作。完成的 HTML 可以收藏、继续修改或下载。
 
 四种制作类型包括场景创作、机械运转、拆解装配和微缩产线。机械、拆解和产线可以根据描述生成可编辑参数。未指定的数值是演示估算。每件作品的外观、运动和交互仍需实际预览和验收。
 
+[![3D 造物台工作台，显示场景、机械、拆解和产线四种制作类型](docs/screenshots/workbench.png)](docs/screenshots/workbench.png)
+
+## 作品展示
+
+以下为本项目制作的交互 HTML 作品截图。点击图片可以看大图。
+
+| 霓雨九龙街 | 熔铸星晷 |
+| --- | --- |
+| [![雨夜街区与霓虹倒影](docs/screenshots/neon-rain-kowloon.png)](docs/screenshots/neon-rain-kowloon.png) | [![岩石底座上的熔铸星晷](docs/screenshots/molten-stardial.png)](docs/screenshots/molten-stardial.png) |
+| **单缸四冲程内燃机** | **行星减速器** |
+| [![单缸内燃机剖面显示活塞、连杆和飞轮](docs/screenshots/four-stroke-engine.png)](docs/screenshots/four-stroke-engine.png) | [![行星减速器爆炸视图，零件沿轴向展开](docs/screenshots/planetary-gearbox.png)](docs/screenshots/planetary-gearbox.png) |
+
+**电机装配线**可以观察物料经过工位、排队和出库。
+
+[![电机装配线的三维工位、输送带与工况面板](docs/screenshots/motor-assembly-line.png)](docs/screenshots/motor-assembly-line.png)
+
 ## 安装和首次运行
 
 1. 安装 [DeepSeek Harness 桌面版](https://www.deepseek.com/harness/)。先使用实测版本 **0.2.2-rc.3** 和简体中文界面，方便使用原生会话的自动发送。包的兼容声明从 `0.2.2-rc.1` 开始，其他宿主版本与系统请以实测范围为准。
-2. 从本仓库 GitHub Releases 下载 `dsh-external-dsh-miniature-atelier-0.24.19.tgz`，也可以复制这个 Release 附件的下载链接。
-3. 在 DSH 侧栏打开「插件 → 添加插件」，填入 Release 附件链接或本地 `.tgz` 的绝对路径。安装并启用，根据宿主提示重新加载。侧栏出现「微缩工坊」即可打开。桌面版使用随附的运行时，安装插件时不用另装 Node.js、pnpm 或 Three.js。只从 GitHub 下载的源码归档需要先构建。
+2. 从 [v0.24.19 预览版](https://github.com/jinxingtaire/dsh-miniature-atelier/releases/tag/v0.24.19) 下载 `dsh-external-dsh-miniature-atelier-0.24.19.tgz`，也可以复制附件的下载链接。
+3. 在 DSH 侧栏打开「插件 → 添加插件」，填入 Release 附件链接或本地 `.tgz` 的绝对路径。安装并启用，根据宿主提示重新加载。v0.24.19 仍以「微缩工坊」显示在侧栏。桌面版使用随附的运行时，安装插件时不用另装 Node.js、pnpm 或 Three.js。只从 GitHub 下载的源码归档需要先构建。
 4. 在 DSH 登录自己的 **DeepSeek 账号**，确认普通 DSH 会话能回复。打开「微缩工坊 → 创作」，选择「机械运转」，输入：
 
    > 做一个持续转动的曲柄滑块模型，连杆带动滑块往复，默认 45 rpm，支持暂停和单步。
@@ -49,4 +67,10 @@ npm test
 npm pack
 ```
 
-维护者可查看 [创作与修改流程](WORKFLOW.md)。反馈时请附 DSH 版本、操作系统、插件版本、复现步骤和脱敏后的报错。项目源码使用 [MIT](LICENSE)，第三方条款见 [第三方来源](THIRD_PARTY_NOTICES.md)。
+维护者可查看 [创作与修改流程](WORKFLOW.md)。反馈时请附 DSH 版本、操作系统、插件版本、复现步骤和脱敏后的报错。
+
+## 致谢与许可证
+
+感谢 **AirsupHQ** 的 machine-skill 和 factory-skill，以及 **elvarofficial** 的 teardown。三个项目分别为机械剖面、拆解演示和微缩产线提供了设计参考。插件里的这些流程由本项目实现，可直接在 DSH 使用。 [正式署名及参考版本](THIRD_PARTY_NOTICES.md)
+
+感谢 **DeepSeek Harness** 提供插件宿主、**Three.js** 提供渲染引擎，以及 **SandBase Lab** 和案例作者提供参考案例索引与原帖。项目源码采用 MIT 许可。 [项目许可证](LICENSE) · [第三方来源和许可证](THIRD_PARTY_NOTICES.md)
