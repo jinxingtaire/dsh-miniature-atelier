@@ -1,0 +1,4 @@
+# Mount the workbench and its authenticated DSH scene design route.
+- insert:
+    - id: miniature-atelier
+      name: '@dsh-external/dsh-miniature-atelier'

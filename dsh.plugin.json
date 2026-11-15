@@ -1,0 +1,19 @@
+{
+  "id": "@dsh-external/dsh-miniature-atelier",
+  "version": "0.24.19",
+  "main": "./lib/index.js",
+  "description": "DSH 三维场景创作工作台：引导设计、自由编辑、参考图片、原生会话制作与作品修改。",
+  "engines": {
+    "dsh": ">=0.2.2-rc.1"
+  },
+  "contributes": {
+    "tools": [],
+    "skills": []
+  },
+  "client": {
+    "main": "./lib/client.js",
+    "inject": [
+      "@deepseek-ai/dsh-client-ui-slots"
+    ]
+  }
+}
