@@ -1,8 +1,8 @@
 {
   "id": "@dsh-external/dsh-miniature-atelier",
-  "version": "0.24.19",
+  "version": "0.24.20",
   "main": "./lib/index.js",
-  "description": "DSH 三维场景创作工作台：引导设计、自由编辑、参考图片、原生会话制作与作品修改。",
+  "description": "3D 造物台：DSH 三维场景创作工作台，支持引导设计、自由编辑、图片参考与原生会话制作。",
   "engines": {
     "dsh": ">=0.2.2-rc.1"
   },

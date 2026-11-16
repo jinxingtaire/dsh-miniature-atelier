@@ -25,9 +25,9 @@ Follow parts through workstations, queues, and dispatch in the **motor assembly 
 ## Install and make your first project
 
 1. Install [DeepSeek Harness Desktop](https://www.deepseek.com/harness/). Start with DSH **0.2.2-rc.3** and the Simplified Chinese interface for automatic handoff to a native session. The package declares DSH 0.2.2-rc.1 as its minimum. See the release notes for the tested versions and platforms.
-2. Download `dsh-external-dsh-miniature-atelier-0.24.19.tgz` from the [v0.24.19 preview release](https://github.com/jinxingtaire/dsh-miniature-atelier/releases/tag/v0.24.19), or copy the asset's download URL.
-3. In the DSH sidebar, open **Plugins → Add plugin** (插件 → 添加插件). Paste the asset URL or the absolute path to the local `.tgz`. Install and enable it, then reload if prompted. In v0.24.19 the sidebar entry is labeled **微缩工坊**. The desktop app supplies the runtime, including Node.js and the package manager, and the plugin bundles Three.js. A GitHub source archive needs to be built first.
-4. Sign in to your own **DeepSeek account** inside DSH and check that a standard DSH session can reply. Open **微缩工坊 → 创作** and choose **机械运转** (Mechanical motion). Try this prompt:
+2. Download `dsh-external-dsh-miniature-atelier-0.24.20.tgz` from the [v0.24.20 preview release](https://github.com/jinxingtaire/dsh-miniature-atelier/releases/tag/v0.24.20), or copy the asset's download URL.
+3. In the DSH sidebar, open **Plugins → Add plugin** (插件 → 添加插件). Paste the asset URL or the absolute path to the local `.tgz`. Install and enable it, then reload if prompted. In v0.24.20 the sidebar entry is labeled **3D 造物台**. The desktop app supplies the runtime, including Node.js and the package manager, and the plugin bundles Three.js. A GitHub source archive needs to be built first.
+4. Sign in to your own **DeepSeek account** inside DSH and check that a standard DSH session can reply. Open **3D 造物台 → 创作** and choose **机械运转** (Mechanical motion). Try this prompt:
 
    > Build a continuously running slider-crank mechanism. Show the crank driving the slider back and forth through a connecting rod. Set the default speed to 45 rpm and add pause and single-step controls.
 

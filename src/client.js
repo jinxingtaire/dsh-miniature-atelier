@@ -3108,7 +3108,7 @@ function escapeAttr(value) {
 
 const STATIC_HTML = `
 <div class="ma-page" data-ma-root>
-  <div class="ma-shell" data-ma-shell role="region" aria-label="微缩工坊">
+  <div class="ma-shell" data-ma-shell role="region" aria-label="3D 造物台">
     <header class="ma-header">
       <div class="ma-brand">
         <svg class="ma-glyph ma-logo" viewBox="0 0 100 100" fill="none" aria-hidden="true">
@@ -3118,8 +3118,8 @@ const STATIC_HTML = `
           <circle cx="78" cy="48" r="2.4" fill="#0d9488" opacity=".95"/>
         </svg>
         <div>
-          <div class="ma-eyebrow"><span class="ma-signal"></span>MINIATURE ATELIER / GUIDED</div>
-          <h1 id="ma-title">微缩工坊 <em>3D 场景创作工作台</em></h1>
+          <div class="ma-eyebrow"><span class="ma-signal"></span>3D MAKER STUDIO / GUIDED</div>
+          <h1 id="ma-title">3D 造物台 <em>3D 场景创作工作台</em></h1>
         </div>
       </div>
       <div class="ma-header-meta">
@@ -5876,7 +5876,7 @@ function apply(ctx) {
         name: 'sidebar.panellist',
         id: MAIN_KEY,
         order: 25,
-        label: () => '微缩工坊',
+        label: () => '3D 造物台',
       },
       SidebarIcon,
     ),
